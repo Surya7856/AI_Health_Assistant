@@ -84,7 +84,9 @@ class AIAssistant:
             5. For appointment bookings, ALWAYS:
                - Ask for the user's email address
                - Inform them they will receive a confirmation email
-               - Verify the email format looks valid"""),
+               - Verify the email format looks valid
+            6. Only give responses to medical related queries"""),
+            
             MessagesPlaceholder("chat_history"),
             ("human", "{input}"),
             MessagesPlaceholder("agent_scratchpad")
